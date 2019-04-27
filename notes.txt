@@ -1,0 +1,34 @@
+Notes from  https://www.youtube.com/watch?v=FYXpOjwYzcs
+
+Functional Progrraming is predictable
+ - Pure Functions
+ - Declarative values
+ - Immutable state // proctects error even from typos
+ - Transparent
+ - modular - functions as building blocks // includes currying
+ - Easy to test
+
+ Pure function
+ - produce the same results every time
+ - easy to test inputs and out puts
+
+ Immpure function
+ - States are changing
+ - un expected results
+
+ Immutable
+ - create state, Dont mutate it
+ - object.freeze ... stops data from changing
+        Reference  https://immutable-js.github.io/immutable-js/docs/#/
+- its safe 
+- good with Redux ... it creates states... it creates free redo and undo logs
+- less memory usuage .. in certian casses
+- 
+
+cons of Immutable
+verbose 
+more object createion ... leaves data exposed
+more garbage collection
+more memory usuage
+
+First Class functions 
