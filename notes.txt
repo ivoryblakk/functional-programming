@@ -32,3 +32,5 @@ more garbage collection
 more memory usuage
 
 First Class functions 
+What is a first class function?
+List examples

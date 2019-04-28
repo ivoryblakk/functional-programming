@@ -1,0 +1,23 @@
+Ramda JavaScript library
+https://ramdajs.com/
+https://www.youtube.com/watch?v=Cltoo-NJ2JM
+
+Immutable JavaScript library
+https://medium.freecodecamp.org/immutable-js-is-intimidating-heres-how-to-get-started-2db1770466d6
+https://devdocs.io/immutable/
+https://immutable-js.github.io/immutable-js/docs/#/
+
+Immutable JS with Redux
+https://redux.js.org/recipes/using-immutablejs-with-redux
+
+Languages 
+Elm (elm-lang.org)
+Clojurescript (github/clojure/cloujurescript)
+Purescript ( purescript.org)
+
+Libaries
+Lodash (lodas.com)
+Ramada (ramdajs.com)
+Rx (reactivex.io)
+Bacon.js (baconjs.github.io)
+Immutable.js (facebook.github.io/immutable-js)

@@ -163,5 +163,85 @@ const add3 = creatAdder(3);
 add3(2) === 5;
 add3(3) === 6;
 
+///////////////////////////////////
 // closure can reduce duplications 
-// Time 30 min mark
+// Example 2a
+///////////////////////////////////
+const request = (options) => {
+    return fetch(options.url, options)
+    .then( resp => resp.json());
+};
+
+const userPromise = request({
+    url: '/users',
+    headers: {'X-custom': 'key'} //Repetative
+});
+
+const tasksPromise = request ({
+    url: '/tasks',
+    headers: {'X-custom': 'key'} //Repetative
+})
+
+///////////////////////////////////
+// Example 2b
+//First Class Clsures
+//////////////////////////////////
+const createRequester = (options) => {
+    return ( otherOptions) => {
+        return request(Object.assign(
+            {}, options, otherOptions
+        ));
+    };
+}
+// creates default property all ways to be added
+const customRequest = createRequester({
+    headers: {'X-custom': 'key'}
+    // we add other defaut objects as well ex { key : 'value }
+})
+// The first object 'header is recalled  from customRequest 
+// and now we can add we other values
+const usesrPromise = customRequest({url: '/users'});
+const tasksPromise =  customRequest({url: '/task'});
+
+//////////////////////////
+// Partial function into closures
+///////////////////////////
+
+const add =  (x,y) => x + y;
+
+//  partial is a hypothetical function 
+const add3 = partial(add , 3);
+
+add3(2) === 5;
+
+// This how to make the partial
+const partial = ( fn, ...args) => {
+    return (...otherArgs) => {
+        return fn( ...args, ...otherArgs)
+    };
+}
+
+
+////////////////////////
+// Currying
+////////////////////////
+
+const add = x => y => x + y;
+//instead of using commas we are using arrows to seperate the args
+
+function add(x) {
+    return function(y){
+        return x + y; 
+    }
+}
+
+// api request with currying 
+// currying has partials built in already
+const request = (defaults) => (options) => {
+    options = Object.assign(
+        {}, defaults, options
+    );
+
+    return fetch(options.url, options)
+    .then( resp => resp.json());
+};
