@@ -19,5 +19,11 @@ Libaries
 Lodash (lodas.com)
 Ramada (ramdajs.com)
 Rx (reactivex.io)
-Bacon.js (baconjs.github.io)
+Bacon.js (baconjs.github.io) // reactive fuction programming
 Immutable.js (facebook.github.io/immutable-js)
+
+what is 'MV*" like react and redux
+
+
+
+https://opensource.com/article/17/6/functional-javascript

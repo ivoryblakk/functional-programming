@@ -1,4 +1,6 @@
-Notes from  https://www.youtube.com/watch?v=FYXpOjwYzcs
+Notes:   https://www.youtube.com/watch?v=FYXpOjwYzcs
+Code: github.com/jfairbank/fp-basics-in-es6
+Slides: bit.ly/scs-fp-basics
 
 Functional Progrraming is predictable
  - Pure Functions
@@ -34,3 +36,37 @@ more memory usuage
 First Class functions 
 What is a first class function?
 List examples
+
+
+What functional programming isn't
+Before we talk about what functional programming is, let's talk about what it is not. 
+ Infact, let's talk about all the language constructs you should throw out (goodbye, old friends):
+
+
+#Loops
+-while
+-do...while
+-for
+-for...of
+-for...in
+#Variable declarations with var or let
+#Void functions
+#Object mutation (for example: o.x = 5;)
+#Array mutator methods
+-copyWithin
+-fill
+-pop
+-push
+-reverse
+-shift
+-sort
+-splice
+-unshift
+#Map mutator methods
+-clear
+-delete
+-set
+#Set mutator methods
+-add
+-clear
+-delete
